@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+@import './theme.css';
+
+@theme {
+  --color-wall: var(--color-wall);
+  --color-portfolio: var(--color-portfolio-bg);
+  --color-wood: var(--color-wood);
+  --color-ink: var(--color-text);
+  --color-muted: var(--color-text-secondary);
+  --color-line: var(--color-border);
+  --color-accent: var(--color-accent);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-wall);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 28%, white);
+}

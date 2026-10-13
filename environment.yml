@@ -1,0 +1,5 @@
+name: person-web
+channels:
+  - conda-forge
+dependencies:
+  - nodejs=22

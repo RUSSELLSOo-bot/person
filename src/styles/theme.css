@@ -1,0 +1,16 @@
+:root {
+  --color-wall: #e8ded0;
+  --color-portfolio-bg: #f7f3ed;
+  --color-wood: #c6a780;
+  --color-text: #292824;
+  --color-text-secondary: #77716a;
+  --color-border: #d8d0c4;
+  --color-accent: #66786b;
+  --color-projection-glow: rgba(255, 250, 240, 0.35);
+  --font-sans: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Georgia", "Times New Roman", serif;
+  --space-section: clamp(2.5rem, 6vw, 4.5rem);
+  --projection-width: min(88vw, 1100px);
+  --projection-max-height: none;
+  --shadow-soft: 0 12px 40px rgba(41, 40, 36, 0.12);
+}
