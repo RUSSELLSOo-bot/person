@@ -3,11 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:env": "npm run dev -w environment-demo",
+    "build:env": "npm run build -w environment-demo",
+    "preview:env": "npm run preview -w environment-demo"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

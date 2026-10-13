@@ -1,0 +1,28 @@
+{
+  "name": "@portfolio/projector-environment",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reusable warm projector-room 3D environment for mounting arbitrary React projection content",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./src/styles/environment.css"
+  },
+  "files": [
+    "src"
+  ],
+  "peerDependencies": {
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/three": "^0.186.0",
+    "typescript": "~6.0.2"
+  }
+}
